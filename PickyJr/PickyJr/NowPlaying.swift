@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct NowPlaying: View {
-    var image: UIImage?
+struct NowPlaying<ViewModel: NowPlayingViewModel>: View {
+    var viewModel: ViewModel
 
     var body: some View {
         BlurryBorderedContentView {
             ImageWithPlaceholder(
-                image: image,
+                image: viewModel.artwork,
                 placeholderSymbolName: "music.note.list"
             )
         }
@@ -60,9 +60,15 @@ struct BlurryBorderedContentView<Content: View>: View {
 }
 
 struct NowPlaying_Previews: PreviewProvider {
-    static var previews: some View {
-        NowPlaying(image: nil)
+    static let wigglesViewModel: MockNowPlayingViewModel = {
+        let vm = MockNowPlayingViewModel()
+        vm.artwork = UIImage(named: "wiggles")
+        return vm
+    }()
 
-        NowPlaying(image: UIImage(named: "wiggles"))
+    static var previews: some View {
+        NowPlaying(viewModel: MockNowPlayingViewModel())
+
+        NowPlaying(viewModel: wigglesViewModel)
     }
 }

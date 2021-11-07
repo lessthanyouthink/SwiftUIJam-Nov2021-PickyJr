@@ -11,7 +11,7 @@ import SwiftUI
 struct PickyJrApp: App {
     var body: some Scene {
         WindowGroup {
-            NowPlaying(image: nil)
+            NowPlaying(viewModel: SystemMusicNowPlayingViewModel())
         }
     }
 }

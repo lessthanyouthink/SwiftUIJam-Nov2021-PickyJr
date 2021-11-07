@@ -11,6 +11,7 @@
 		B5B6BB902735B12400261690 /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6BB8F2735B12400261690 /* NowPlaying.swift */; };
 		B5B6BB922735B12500261690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B6BB912735B12500261690 /* Assets.xcassets */; };
 		B5B6BB952735B12500261690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B6BB942735B12500261690 /* Preview Assets.xcassets */; };
+		B5B6BB9C273718AE00261690 /* NowPlayingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6BB9B273718AE00261690 /* NowPlayingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B5B6BB8F2735B12400261690 /* NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlaying.swift; sourceTree = "<group>"; };
 		B5B6BB912735B12500261690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B6BB942735B12500261690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5B6BB9B273718AE00261690 /* NowPlayingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				B5B6BB8D2735B12400261690 /* PickyJrApp.swift */,
 				B5B6BB8F2735B12400261690 /* NowPlaying.swift */,
+				B5B6BB9B273718AE00261690 /* NowPlayingViewModel.swift */,
 				B5B6BB912735B12500261690 /* Assets.xcassets */,
 				B5B6BB932735B12500261690 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				B5B6BB902735B12400261690 /* NowPlaying.swift in Sources */,
 				B5B6BB8E2735B12400261690 /* PickyJrApp.swift in Sources */,
+				B5B6BB9C273718AE00261690 /* NowPlayingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
