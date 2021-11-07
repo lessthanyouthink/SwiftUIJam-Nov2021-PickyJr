@@ -31,6 +31,8 @@ class SystemMusicNowPlayingViewModel: NowPlayingViewModel {
                 self?.artwork = image
             }
             .store(in: &subscriptions)
+
+        NotificationCenter.default.post(name: .MPMusicPlayerControllerNowPlayingItemDidChange, object: nil)
     }
 
     deinit {

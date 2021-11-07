@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NowPlaying<ViewModel: NowPlayingViewModel>: View {
-    var viewModel: ViewModel
+    @ObservedObject var viewModel: ViewModel
 
     var body: some View {
         BlurryBorderedContentView {
